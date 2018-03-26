@@ -1,0 +1,17 @@
+{
+  "name": "kakebo-reason-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel public/index.html"
+  },
+  "devDependencies": {
+    "bsb-js": "^1.0.2",
+    "parcel-bundler": "^1.6.2"
+  },
+  "dependencies": {
+    "bs-platform": "^2.2.3",
+    "reason-react": "^0.3.4"
+  }
+}

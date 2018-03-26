@@ -1,0 +1,17 @@
+{
+  "name": "reason-parcel",
+  "refmt": 3,
+  "sources": "src",
+  "dependencies": [
+    "bs-webapi"
+  ],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+
+  "reason": {
+    "react-jsx": 2
+  }
+}
