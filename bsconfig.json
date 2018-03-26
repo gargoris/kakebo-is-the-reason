@@ -1,7 +1,12 @@
 {
-  "name": "reason-parcel",
+  "name": "kakebo-is-the-reason",
   "refmt": 3,
-  "sources": "src",
+  "sources": [
+     {
+       "dir": "src",
+       "subdirs": true
+      }
+  ],
   "dependencies": [
     "bs-webapi"
   ],
