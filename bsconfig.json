@@ -1,9 +1,15 @@
 {
-  "name": "reason-parcel",
+  "name": "kakebo-is-the-reason",
   "refmt": 3,
-  "sources": "src",
-  "dependencies": [
-    "bs-webapi"
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "bs-dependencies": [
+    "bs-moment",
+    "reason-react"
   ],
   "package-specs": {
     "module": "commonjs",
@@ -13,5 +19,9 @@
 
   "reason": {
     "react-jsx": 2
-  }
+  },
+  "warnings": {
+    "error": "+5"
+  },
+  "namespace": true
 }

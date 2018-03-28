@@ -4,15 +4,30 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "parcel public/index.html"
+    "webpack": "webpack -w",
+    "webpack:production": "NODE_ENV=production webpack",
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "pretest": "yarn run build",
+    "test": "jest",
+    "prepublish": "rm -fr dist && yarn run clean && yarn run webpack"
   },
   "devDependencies": {
     "bsb-js": "^1.0.2",
+    "jest": "^22.4.3",
     "parcel-bundler": "^1.6.2"
   },
   "dependencies": {
-    "bs-moment": "^0.2.4",
     "bs-platform": "^2.2.3",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
+    "@glennsl/bs-jest": "^0.4.2",
+    "aws-sdk": "^2.215.1",
+    "bs-moment": "^0.2.4",
+    "moment": "^2.21.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "reason-react": "^0.3.4"
   }
 }
