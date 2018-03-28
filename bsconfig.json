@@ -1,6 +1,5 @@
 {
   "name": "kakebo-is-the-reason",
-  "refmt": 3,
   "sources": [
     {
       "dir": "src",
@@ -8,20 +7,15 @@
     }
   ],
   "bs-dependencies": [
-    "bs-moment",
-    "reason-react"
+    "reason-react",
+    "bs-jest",
+    "bs-moment"
   ],
-  "package-specs": {
-    "module": "commonjs",
-    "in-source": true
-  },
-  "suffix": ".bs.js",
-
   "reason": {
     "react-jsx": 2
   },
-  "warnings": {
-    "error": "+5"
-  },
-  "namespace": true
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
+  "refmt": 3
 }

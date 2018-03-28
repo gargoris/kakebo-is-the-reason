@@ -1,16 +1,16 @@
 ####{BSB GENERATED: NO EDIT
-B lib/bs
-FLG -open KakeboIsTheReason
-FLG -ppx '/home/fran/ocaml/kakebo-is-the-reason/node_modules/bs-platform/lib/reactjs_jsx_ppx_2.exe'
-FLG -ppx /home/fran/ocaml/kakebo-is-the-reason/node_modules/bs-platform/lib/bsppx.exe
+FLG -ppx '/home/fran/.nvm/versions/node/v9.7.1/lib/node_modules/bs-platform/lib/reactjs_jsx_ppx_2.exe'
+FLG -ppx /home/fran/.nvm/versions/node/v9.7.1/lib/node_modules/bs-platform/lib/bsppx.exe
 S /home/fran/ocaml/kakebo-is-the-reason/node_modules/bs-platform/lib/ocaml
 B /home/fran/ocaml/kakebo-is-the-reason/node_modules/bs-platform/lib/ocaml
 FLG -nostdlib -no-alias-deps -color always
 FLG -w -30-40+6+7+27+32..39+44+45+101
-S /home/fran/ocaml/kakebo-is-the-reason/node_modules/bs-moment/lib/ocaml
-B /home/fran/ocaml/kakebo-is-the-reason/node_modules/bs-moment/lib/ocaml
 S /home/fran/ocaml/kakebo-is-the-reason/node_modules/reason-react/lib/ocaml
 B /home/fran/ocaml/kakebo-is-the-reason/node_modules/reason-react/lib/ocaml
+S /home/fran/ocaml/kakebo-is-the-reason/node_modules/bs-jest/lib/ocaml
+B /home/fran/ocaml/kakebo-is-the-reason/node_modules/bs-jest/lib/ocaml
+S /home/fran/ocaml/kakebo-is-the-reason/node_modules/bs-moment/lib/ocaml
+B /home/fran/ocaml/kakebo-is-the-reason/node_modules/bs-moment/lib/ocaml
 S src
 B lib/bs/src
 S src/Types

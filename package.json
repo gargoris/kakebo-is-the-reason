@@ -1,33 +1,29 @@
 {
   "name": "kakebo-reason-react",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "reason-scripts": "0.8.0",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
+    "bs-moment": "^0.2.4",
+    "moment": "^2.21.0"
+  },
   "scripts": {
     "webpack": "webpack -w",
     "webpack:production": "NODE_ENV=production webpack",
-    "build": "bsb -make-world",
-    "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world",
-    "pretest": "yarn run build",
-    "test": "jest",
-    "prepublish": "rm -fr dist && yarn run clean && yarn run webpack"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prepare": "npm link bs-platform"
   },
   "devDependencies": {
-    "bsb-js": "^1.0.2",
-    "jest": "^22.4.3",
-    "parcel-bundler": "^1.6.2"
-  },
-  "dependencies": {
-    "bs-platform": "^2.2.3",
-    "webpack": "^4.0.1",
-    "webpack-cli": "^2.0.10",
-    "@glennsl/bs-jest": "^0.4.2",
-    "aws-sdk": "^2.215.1",
-    "bs-moment": "^0.2.4",
-    "moment": "^2.21.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "bs-jest": "^0.3.2",
     "reason-react": "^0.3.4"
   }
 }
